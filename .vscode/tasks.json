@@ -4,13 +4,21 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "linux": {
+                "command": "g++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++14 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
+            },
+            "osx": {
+                "command": "g++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++14 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
+            },
+            "windows": {
+                "command": "g++ -o ${relativeFileDirname}\\${fileBasenameNoExtension}.exe -std=c++14 ${relativeFile} && ${relativeFileDirname}\\${fileBasenameNoExtension}.exe"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
             "label": "compile",
-            "type": "shell",
-            "command": "g++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++14 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
+            "type": "shell"
         }
     ]
 }
