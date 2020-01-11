@@ -16,6 +16,7 @@ Arrays are similar to vectors in the sense that they store a sequence of element
 |Erase|Yes|No|
 |Resize|Yes|No|
 |Iteration (e.g. `for(auto item : v)`)| Yes| No
+
 *\* When using arrays, you need to pass the size around in a separate variable.*
 
 *\*\* You can use only part of the actual physical size of the array and have *spare capacity* similarly to vectors. However, you need to keep track of both as separate variables and pass them around.*
