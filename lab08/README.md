@@ -1,5 +1,5 @@
 # Lab 8 - Classes
-This lab explores how we can use classes in C++ to extend the langauge with custom types.
+This lab explores how we can use classes in C++ to extend the language with custom types.
 
 ## Exercise 1
 Write a class that models fraction, e.g. `3/4`. The class should allow to add two fractions together and get another fraction.
@@ -8,4 +8,4 @@ Write a class that models fraction, e.g. `3/4`. The class should allow to add tw
     - Default constructor is called when class variable is declared, i.e. classes are always initialized.
     - Additional constructors can be defined to initialize a class in a specific way.
 - Objects of a class can be used as a function parameters and return type. They are passed by value by default, i.e. copied.
-- Expose only the mimimum API necessary to do the job. It is difficult to hide functions later, because other code might be using them.
+- Expose only the minimum API necessary to do the job. It is difficult to hide functions later, because other code might be using them.
