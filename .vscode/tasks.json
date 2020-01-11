@@ -8,7 +8,7 @@
                 "command": "g++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++14 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
             },
             "osx": {
-                "command": "g++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++14 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
+                "command": "clang++ -o ${relativeFileDirname}/${fileBasenameNoExtension} -std=c++17 ${relativeFile} && ./${relativeFileDirname}/${fileBasenameNoExtension}"
             },
             "windows": {
                 "command": "g++ -o ${relativeFileDirname}\\${fileBasenameNoExtension}.exe -std=c++14 ${relativeFile} && ${relativeFileDirname}\\${fileBasenameNoExtension}.exe"
