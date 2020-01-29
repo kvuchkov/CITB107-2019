@@ -1,0 +1,13 @@
+show 10
+add 10
+show 10
+add 8
+show 10
+show 8
+add 10
+show 10
+get 10
+show 10
+get 8
+show 8
+get 8
